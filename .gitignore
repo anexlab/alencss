@@ -1,0 +1,12 @@
+node_modules/
+.vscode/
+
+.sass-cache/
+*.css.map
+dist/*.map
+
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp

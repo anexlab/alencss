@@ -1,0 +1,30 @@
+{
+  "name": "alencss",
+  "version": "0.1.0",
+  "description": "Alencss — a sleek, utility-first SCSS framework for building fast, responsive, and customizable user interfaces.",
+  "author": "Anexlab",
+  "license": "MIT",
+  "main": "dist/alencss.css",
+  "style": "dist/alencss.css",
+  "scripts": {
+  "dev": "node ./dev.js",
+  "build": "sass src/main.scss dist/alencss.css --style=expanded --no-source-map && sass src/main.scss dist/alencss.min.css --style=compressed --no-source-map"
+},
+
+  "keywords": [
+    "alencss",
+    "modern day open source framework for frontend development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anexlab/alencss"
+  },
+  "bugs": {
+    "url": "https://github.com/anexlab/alencss/issues"
+  },
+  "homepage": "https://github.com/anexlab/alencss#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "sass": "^1.89.2"
+  }
+}

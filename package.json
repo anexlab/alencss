@@ -7,10 +7,9 @@
   "main": "dist/alencss.css",
   "style": "dist/alencss.css",
   "scripts": {
-  "dev": "node ./dev.js",
-  "build": "sass src/main.scss dist/alencss.css --style=expanded --no-source-map && sass src/main.scss dist/alencss.min.css --style=compressed --no-source-map"
-},
-
+    "dev": "node ./dev.js",
+    "build": "node ./build.js"
+  },
   "keywords": [
     "alencss",
     "modern day open source framework for frontend development"
@@ -24,7 +23,10 @@
   },
   "homepage": "https://github.com/anexlab/alencss#readme",
   "devDependencies": {
+    "chalk": "^5.4.1",
     "concurrently": "^9.1.2",
-    "sass": "^1.89.2"
+    "esbuild": "^0.25.5",
+    "sass": "^1.89.2",
+    "terser": "^5.42.0"
   }
 }

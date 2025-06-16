@@ -1,19 +1,19 @@
-@use "./base/base" as *;
+@use "./scss/base/base" as *;
 
-@use "./components/buttons" as *;
-@use "./components/cards" as *;
-@use "./components/form" as *;
-@use "./components/hero" as *;
-@use "./components/navbar" as *;
+@use "./scss/components/buttons" as *;
+@use "./scss/components/cards" as *;
+@use "./scss/components/form" as *;
+@use "./scss/components/hero" as *;
+@use "./scss/components/navbar" as *;
 
-@use "./core/colors" as *;
-@use "./core/mixins" as *;
-@use "./core/shades" as *;
+@use "./scss/core/colors" as *;
+@use "./scss/core/mixins" as *;
+@use "./scss/core/shades" as *;
 
-@use "./layout/container" as *;
-@use "./layout/grid" as *;
-@use "./layout/spacing" as *;
+@use "./scss/layout/container" as *;
+@use "./scss/layout/grid" as *;
+@use "./scss/layout/spacing" as *;
 
-@use "./utilities/display" as *;
-@use "./utilities/position" as *;
-@use "./utilities/text" as *;
+@use "./scss/utilities/display" as *;
+@use "./scss/utilities/position" as *;
+@use "./scss/utilities/text" as *;

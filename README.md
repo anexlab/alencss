@@ -97,8 +97,7 @@ To use Alencss directly in your project without installation, include it via **j
 
 ## Getting started
 
-Alencss is a modern, SCSS-based CSS framework designed for building clean, responsive, and scalable user interfaces.  
-It can be installed via **npm** for modern build tools or loaded directly via a **CDN** for quick prototyping.
+Alencss is a modern, SCSS-based CSS framework designed for building clean, responsive, and scalable user interfaces. It can be installed via **npm** for modern build tools or loaded directly via a **CDN** for quick prototyping.
 
 ---
 
@@ -285,9 +284,9 @@ Follow the standard GitHub workflow to propose changes:
 1. **Fork** the repository to your GitHub account.
 2. **Clone** your fork locally:
 
-```bash
-git clone https://github.com/<your-username>/alencss.git
-```
+   ```bash
+   git clone https://github.com/<your-username>/alencss.git
+   ```
 
 3. **Create a new branch** for your changes:
 

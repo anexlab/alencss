@@ -18,14 +18,20 @@ const timestamp = () => {
 };
 
 const log = {
-  initial: (msg) => console.log(`🚀  ${chalk.gray(timestamp())}  ${chalk.green(msg)}`),
-  success: (msg) => console.log(`✅  ${chalk.gray(timestamp())}  ${chalk.green(msg)}`),
-  error: (msg) => console.log(`❌  ${chalk.gray(timestamp())}  ${chalk.red(msg)}`),
-  watch: (msg) => console.log(`👀  ${chalk.gray(timestamp())}  ${chalk.cyan(msg)}`),
+  initial: (msg) =>
+    console.log(`🚀  ${chalk.gray(timestamp())}  ${chalk.green(msg)}`),
+  success: (msg) =>
+    console.log(`✅  ${chalk.gray(timestamp())}  ${chalk.green(msg)}`),
+  error: (msg) =>
+    console.log(`❌  ${chalk.gray(timestamp())}  ${chalk.red(msg)}`),
+  watch: (msg) =>
+    console.log(`👀  ${chalk.gray(timestamp())}  ${chalk.cyan(msg)}`),
 };
 
-const compileScss = (style) => sass.compile(inputScss, { style, sourceMap: false });
-const writeCss = (style, outputPath) => fs.writeFileSync(outputPath, compileScss(style).css);
+const compileScss = (style) =>
+  sass.compile(inputScss, { style, sourceMap: false });
+const writeCss = (style, outputPath) =>
+  fs.writeFileSync(outputPath, compileScss(style).css);
 
 const buildJs = async () => {
   await esbuild.build({
@@ -57,7 +63,9 @@ const showError = (err, label) => {
   console.log();
   console.log("   " + chalk.gray(errorLine));
   console.log("   " + chalk.gray(pointer));
-  console.log("   " + chalk.dim(`${file} ${line + 1}:${col + 1}  root stylesheet`));
+  console.log(
+    "   " + chalk.dim(`${file} ${line + 1}:${col + 1}  root stylesheet`)
+  );
   console.log();
 };
 

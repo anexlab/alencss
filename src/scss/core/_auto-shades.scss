@@ -1,0 +1,85 @@
+@use "sass:color";
+@use "sass:map";
+@use "./colors" as *;
+
+// Auto-generate shades for each color in $colors
+$shades: ();
+
+@each $name, $value in $colors {
+  $steps: ();
+
+  // Extract HSL components
+  $h: color.channel($value, "hue", $space: hsl);
+  $s: color.channel($value, "saturation", $space: hsl);
+  $l: color.channel($value, "lightness", $space: hsl);
+
+  // Only generate if lightness is within range (10%–90%)
+  @if $l >= 10% and $l <= 90% {
+    // Generate shades 100–900 (light to dark)
+    @for $i from 1 through 9 {
+      $level: $i * 100;
+      $lightness: 100% - ($i * 10%);
+      $shade: hsl($h, $s, $lightness);
+
+      $steps: map.merge(
+        $steps,
+        (
+          $level: $shade,
+        )
+      );
+    }
+
+    // Merge generated shades
+    $shades: map.merge(
+      $shades,
+      (
+        $name: $steps,
+      )
+    );
+  }
+  //----------< Debug Point For Skipped Colors >----------
+  // @else {
+  //   @warn "Skipping #{$name} — lightness (#{$l}) is too extreme for shade generation.";
+  // }
+}
+
+//---------------------------------------------------------
+//      Main core function for generating the shades
+//                Note: It can't filter
+//---------------------------------------------------------
+
+// @use "sass:color";
+// @use "sass:map";
+// @use "./colors" as *;
+
+// // Auto-generate shades for each color in $colors
+// $shades: ();
+
+// @each $name, $value in $colors {
+//   $steps: ();
+
+//   // Extract HSL components using modern API
+//   $h: color.channel($value, "hue", $space: hsl);
+//   $s: color.channel($value, "saturation", $space: hsl);
+
+//   // Generate shades 100–900 (light to dark)
+//   @for $i from 1 through 9 {
+//     $level: $i * 100;
+//     $lightness: 100% - ($i * 10%);
+//     $shade: hsl($h, $s, $lightness);
+
+//     $steps: map.merge(
+//       $steps,
+//       (
+//         $level: $shade,
+//       )
+//     );
+//   }
+
+//   $shades: map.merge(
+//     $shades,
+//     (
+//       $name: $steps,
+//     )
+//   );
+// }

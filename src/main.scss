@@ -1,19 +1,20 @@
-@use "./scss/base/base" as *;
-
-@use "./scss/components/buttons" as *;
-@use "./scss/components/cards" as *;
-@use "./scss/components/form" as *;
-@use "./scss/components/hero" as *;
-@use "./scss/components/navbar" as *;
-
+@use "sass:color";
 @use "./scss/core/colors" as *;
-@use "./scss/core/mixins" as *;
-@use "./scss/core/shades" as *;
+@use "./scss/core/auto-shades" as *;
 
-@use "./scss/layout/container" as *;
-@use "./scss/layout/grid" as *;
-@use "./scss/layout/spacing" as *;
+:root {
+  /*----------< colors >----------*/
+  @each $colors, $value in $colors {
+    --clr-#{$colors}: #{$value};
+  }
 
-@use "./scss/utilities/display" as *;
-@use "./scss/utilities/position" as *;
-@use "./scss/utilities/text" as *;
+  /*----------< shades >----------*/
+  @each $color, $shades in $shades {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
+  }
+}
+
+//----------< debugs >----------
+// @debug $shades;

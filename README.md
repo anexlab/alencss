@@ -47,54 +47,6 @@ Alencss is a modern, SCSS-based CSS framework designed for building clean, respo
 
 It supports a responsive grid system, flexible spacing utilities, customizable color palettes, and typography presets—all built with extendable SCSS architecture. Developers can integrate it seamlessly into any workflow, whether working with pure HTML, modern JavaScript frameworks like React or Vue, or build tools such as Vite and Webpack.
 
-## Installation
-
-Alencss can be installed using **npm** for seamless integration into modern development environments or loaded directly via a **CDN** for quick prototyping.
-
-### Using npm
-
-Install Alencss via npm:
-
-```bash
-npm install alencss
-```
-
-Once installed, import the compiled CSS file into your project:
-
-**For HTML:**
-
-```html
-<link rel="stylesheet" href="./node_modules/alencss/dist/alencss.min.css" />
-```
-
-**For React, Vite, or Next.js:**
-
-```js
-import "alencss/dist/alencss.min.css";
-```
-
-### Using CDN
-
-To use Alencss directly in your project without installation, include it via **jsDelivr**:
-
-**Latest version (auto-updates):**
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/alencss@latest/dist/alencss.min.css"
-/>
-```
-
-**Specific version (recommended for production):**
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/alencss@0.0.1/dist/alencss.min.css"
-/>
-```
-
 ## Getting started
 
 Alencss is a modern, SCSS-based CSS framework designed for building clean, responsive, and scalable user interfaces. It can be installed via **npm** for modern build tools or loaded directly via a **CDN** for quick prototyping.

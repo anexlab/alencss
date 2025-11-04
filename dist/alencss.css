@@ -3,6 +3,7 @@
   --clr-snow-white: hsl(0, 100%, 99%);
   --clr-green: hsl(145, 63%, 42%);
   --clr-cerise-red: hsl(344, 65%, 49%);
+  --clr-purple: hsl(275, 40%, 18%);
   /*----------< shades >----------*/
   --clr-green-100: hsl(145, 63%, 90%);
   --clr-green-200: hsl(145, 63%, 80%);
@@ -22,4 +23,13 @@
   --clr-cerise-red-700: hsl(344, 65%, 30%);
   --clr-cerise-red-800: hsl(344, 65%, 20%);
   --clr-cerise-red-900: hsl(344, 65%, 10%);
+  --clr-purple-100: hsl(275, 40%, 90%);
+  --clr-purple-200: hsl(275, 40%, 80%);
+  --clr-purple-300: hsl(275, 40%, 70%);
+  --clr-purple-400: hsl(275, 40%, 60%);
+  --clr-purple-500: hsl(275, 40%, 50%);
+  --clr-purple-600: hsl(275, 40%, 40%);
+  --clr-purple-700: hsl(275, 40%, 30%);
+  --clr-purple-800: hsl(275, 40%, 20%);
+  --clr-purple-900: hsl(275, 40%, 10%);
 }

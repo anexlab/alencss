@@ -1,12 +1,30 @@
+# dependencies
 node_modules/
+
+# editor
 .vscode/
+.idea/
 
+# environment
+.env
+.env.*
+
+# npm auth
+.npmrc
+
+# build/cache
 .sass-cache/
-*.css.map
+.cache/
 dist/*.map
+dist/*.temp.css
+*.css.map
+*.tmp
+*.log
 
+# OS files
 .DS_Store
 Thumbs.db
 
-*.log
-*.tmp
+# local demo files (if intentionally ignored)
+*index.html
+assets/

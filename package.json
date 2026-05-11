@@ -1,28 +1,49 @@
 {
   "name": "alencss",
   "version": "0.0.2",
-  "description": "Alencss — a sleek, utility-first SCSS framework for building fast, responsive, and customizable user interfaces.",
+  "description": "AlenCSS — a sleek, utility-first SCSS framework for building fast, responsive, and customizable user interfaces.",
   "author": "Anexlab",
   "license": "MIT",
-  "main": "dist/alencss.css",
+  "main": "dist/alencss.js",
   "style": "dist/alencss.css",
+  "exports": {
+    ".": {
+      "default": "./dist/alencss.js"
+    },
+    "./style.css": "./dist/alencss.css"
+  },
+  "files": [
+    "dist",
+    "src/scss",
+    "src/main.scss",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "node ./dev.js",
     "build": "node ./build.js"
   },
   "keywords": [
-    "alencss",
-    "modern day open source framework for frontend development"
+    "css",
+    "scss",
+    "framework",
+    "utility-first",
+    "frontend",
+    "responsive",
+    "ui",
+    "design-system",
+    "alencss"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/anexlab/alencss"
+    "url": "https://github.com/anexlab/alencss.git"
   },
   "bugs": {
     "url": "https://github.com/anexlab/alencss/issues"
   },
   "homepage": "https://github.com/anexlab/alencss#readme",
   "devDependencies": {
+    "chalk": "^4.1.2",
     "concurrently": "^9.1.2",
     "esbuild": "^0.25.12",
     "sass": "^1.93.3",
@@ -30,8 +51,5 @@
     "stylelint-config-standard-scss": "^16.0.0",
     "stylelint-scss": "^6.12.1",
     "terser": "^5.42.0"
-  },
-  "dependencies": {
-    "chalk": "^4.1.2"
   }
 }

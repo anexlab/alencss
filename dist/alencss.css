@@ -4,6 +4,7 @@
   --clr-green: hsl(145, 63%, 42%);
   --clr-cerise-red: hsl(344, 65%, 49%);
   --clr-purple: hsl(275, 40%, 18%);
+  --clr-dark-maroon: hsl(350, 80%, 18%);
   /*----------< shades >----------*/
   --clr-green-100: hsl(145, 63%, 90%);
   --clr-green-200: hsl(145, 63%, 80%);
@@ -32,4 +33,13 @@
   --clr-purple-700: hsl(275, 40%, 30%);
   --clr-purple-800: hsl(275, 40%, 20%);
   --clr-purple-900: hsl(275, 40%, 10%);
+  --clr-dark-maroon-100: hsl(350, 80%, 90%);
+  --clr-dark-maroon-200: hsl(350, 80%, 80%);
+  --clr-dark-maroon-300: hsl(350, 80%, 70%);
+  --clr-dark-maroon-400: hsl(350, 80%, 60%);
+  --clr-dark-maroon-500: hsl(350, 80%, 50%);
+  --clr-dark-maroon-600: hsl(350, 80%, 40%);
+  --clr-dark-maroon-700: hsl(350, 80%, 30%);
+  --clr-dark-maroon-800: hsl(350, 80%, 20%);
+  --clr-dark-maroon-900: hsl(350, 80%, 10%);
 }
